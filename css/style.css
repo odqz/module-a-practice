@@ -97,21 +97,39 @@ section {
 
 .navigation-right {
   display: flex;
-  gap: 20px;
+  gap: 48px;
 }
 
 .navigation-right > a {
   color: var(--text-light);
   font-family: 'Quicksand regular';
   text-decoration: none;
+  padding: 4px;
+  border-bottom: 2px solid transparent;
 }
 
 .navigation-right > a:hover {
-  color: var(--text-subtle);
+  border-bottom: 2px solid var(--primary);
 }
 
 /* Hero styles */
+#hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 799px;
+}
 
+#hero > video {
+  width: 100%;
+  position: absolute;
+  inset: 0;
+}
+
+.hero-container {
+  position: relative;
+}
 
 /* About styles */
 
