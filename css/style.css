@@ -12,6 +12,8 @@
   font-weight: bold;
 }
 
+
+
 :root {
   /* Brand Colors */
   --primary: #e05600;
@@ -59,6 +61,7 @@
 body {
   width: 100%;
   min-height: 100vh;
+  font-family: 'Quicksand Regular';
 }
 
 section {
@@ -127,12 +130,120 @@ section {
   inset: 0;
 }
 
-.hero-container {
+.hero-overlay {
+  width: 100%;
+  height: 970px;
   position: relative;
+  background-image: linear-gradient(135deg, var(--overlay), rgba(30, 39, 73, 0.8));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.hero-award {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 20px;
+  border-radius: 30px;
+  border: 1px solid var(--primary);
+  width: fit-content;
+  /* background-image: radial-gradient(at bottom right, var(--overlay) 70%, var(--primary-light)); */
+  /* opacity: 90%; */
+}
+
+.hero-award > i, .hero-award > p {
+  color: var(--primary-dark);
+}
+
+.hero-title {
+  width: fit-content;
+}
+
+.hero-title > * {
+  color: var(--white);
+  font-family: 'Quicksand Bold';
+  font-size: 72px;
+  line-height: 1;
+}
+
+.hero-title-colored {
+  color: var(--primary-dark);
+}
+
+.hero-description {
+  width: 445px;
+  color: var(--text-medium);
+  font-size: 20px;
+}
+
+.hero-links {
+  display: flex;
+  gap: 24px;
+}
+
+.hero-link {
+  padding: 18px 28px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  font-family: 'Quicksand Bold';
+  color: var(--white);
+}
+
+.hero-about-link {
+  background-image: linear-gradient(to left, var(--primary-light) 10%, var(--primary));
+  border: 2px solid transparent;
+}
+
+.hero-portfolio-link {
+  border: 2px solid var(--border);
+}
+
+.hero-link:hover {
+  transform: translateY(-4px);
+}
+
+.hero-facts {
+  display: flex;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.hero-fact {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hero-fact > h3 {
+  color: var(--primary);
+  font-family: 'Quicksand Bold';
+  font-size: 40px;
+}
+
+.hero-fact > p {
+  color: var(--text-medium);
+  font-size: 14px;
 }
 
 /* About styles */
-
+#about {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: purple;
+}
 
 /* Portfolio styles */
 
